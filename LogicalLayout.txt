@@ -1,0 +1,132 @@
+App Name: Piepser
+
+This is a text document that contains information on what each "screen" should look like.  Please reference included .PNG file.
+
+******************************************************************************
+**Login Screen
+************************************************************************
+This is the screen the user will see upon first opening the application.
+
+###Visuals:
+
+The login screen will have two text fields in the middle of the application:
+	-Username
+	-Password
+There is also a "Remember me" check box to store the username for future logins.
+Under Remember Me are two buttons
+
+At the bottom edge of application are two buttons on opposite corners:
+	-Create New Account
+	-Forgot Password
+
+.Create New Account will open a new window
+
+Forgot Password will open a new window.
+
+###Data:
+
+The login screen will need to read and interpret username and password data from the database.
+
+The bottom buttons will need to be programmed to open the correct windows.
+
+*****************************************************************************
+**Register Page
+****************************************************************************
+The register page is screen the user will see when creating a new account.  They are coming from the Login Screen.
+
+###Visuals:
+
+The user will be presented with six (6) text fields for username, password, first name, last name, email, and phone number.
+
+At the bottom of the page is a submit button.
+
+###Data:
+
+The information entered on this page will be added to our database.
+
+MySQL tables that will be edited:
+	username
+	password
+	first name
+	last name
+	email
+	phone number
+
+Also, record should be assigned a new unique idetifer (most likely called "User ID").
+
+Everytime submit is pressed, the user is assigned the next available User ID
+	(e.g. database already contains user 001 and user 002.  New user will be assigned user 003.  Next new user will be assigned user 004... etc)
+
+***********************************************************************************
+**Main Page
+*********************************************************************************
+
+This is the page that the user will spend most of his or her time in.  Hence "main page".  Inside this screen, the user will be able
+to see his list of groups.  He will also be allowed to add new groups from this page.  There are also buttons on the page to access a general settings page and 
+a "View Requests Page"
+
+###Visuals:
+
+The top border of window will have a settings button and a view requests button.
+
+In the middle of the window, there will be a scrollable list of groups the user has made
+	(e.g. HR, Accounting, IT People)
+
+At the bottom border of the window there will be two buttons named create group and remove group.
+
+If present, clicking on a group button will take user to the Group View page 
+
+-Settings button will take user to settings page
+
+-View Requests will take user to requests page
+
+- Create Group will take user to Create new Group Page
+
+- Remove group will take the user to the remove group page
+	options:
+		user will stay on same page, and can "delete" the buttons that are there (think Apple iOS and deleting emails0
+		user will be directed to a different page and choose which groups to remove (checklist) and come back to Main page where the removed group will be gone.
+
+###Data:
+
+The actual groups will be stored on device.
+	Option: groups can be stored as a table on MySQL and queryed from app
+
+This page needs to access whereever the above data is stored and display it on the Main Page.
+
+The Grouplist portion of the main page should be scrollable if the user has more groups than the window can fit.
+
+The settings, view requests, create group, and remove group buttons stay in place even if grouplist is scrollable.
+	(i.e. when scrolling thru list, can still access buttons without having to scroll all the way back up or down)
+
+Buttons as described in visual section should be correctly programmed to take user to appropriate pages..
+
+*****************************************************************************************
+**Create New Group View
+****************************************************************************************
+THis is the page where users create groups.  They add members to group on a different page.
+
+###Visuals
+
+The page simply contains a text field to enter the desired group name.
+
+Under there are a submit and cancel buttons.
+
+-Submit will enter the data and direct the user back to the Main Page
+
+-Cancel will NOT enter any data and take the user back to the Main Page.
+
+###Data
+
+The Enter Group Name entry field will store this name either locally on the device or in the database.
+
+This name will be referenced again in the Main Page, and the following pages concerning Groups.
+
+The submit button is like an "okay send" sort of thing.
+
+
+*****************************************************************************************
+**Create New Group View
+****************************************************************************************
+
+
