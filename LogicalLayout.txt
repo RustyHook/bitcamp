@@ -3,7 +3,7 @@ App Name: Piepser
 This is a text document that contains information on what each "screen" should look like.  Please reference included .PNG file.
 
 ******************************************************************************
-**Login Screen
+**Login Screen --> 1
 ************************************************************************
 This is the screen the user will see upon first opening the application.
 
@@ -30,7 +30,7 @@ The login screen will need to read and interpret username and password data from
 The bottom buttons will need to be programmed to open the correct windows.
 
 *****************************************************************************
-**Register Page
+**Register Page  --> 2
 ****************************************************************************
 The register page is screen the user will see when creating a new account.  They are coming from the Login Screen.
 
@@ -58,7 +58,7 @@ Everytime submit is pressed, the user is assigned the next available User ID
 	(e.g. database already contains user 001 and user 002.  New user will be assigned user 003.  Next new user will be assigned user 004... etc)
 
 ***********************************************************************************
-**Main Page
+**Main Page  --> 3
 *********************************************************************************
 
 This is the page that the user will spend most of his or her time in.  Hence "main page".  Inside this screen, the user will be able
@@ -102,7 +102,7 @@ The settings, view requests, create group, and remove group buttons stay in plac
 Buttons as described in visual section should be correctly programmed to take user to appropriate pages..
 
 ********************************************************************************************
-**Group View
+**Group View  --> 6
 *********************************************************************************************
 This is the page where the user views his or her groups.  This page is accessed from the Main Page.  In this page is a list of which contacts are in the group, the name of the group, a little box for sending messages, and a 
 a send button.
@@ -152,7 +152,7 @@ Clicking the button will send a new message, and the icons next to group contact
 
 
 *****************************************************************************************
-**Create New Group View
+**Create New Group View  --> 8
 ****************************************************************************************
 THis is the page where users create groups.  They add members to group on a different page.
 
@@ -176,7 +176,7 @@ The submit button is like an "okay send" sort of thing.
 
 
 *****************************************************************************************
-**Group Member View
+**Group Member View --> not added yet
 ****************************************************************************************
 Group view is a page that shows up when a user clicks on a group members name from the 
 
@@ -184,7 +184,7 @@ FINISH ME
 
 
 *****************************************************************************************
-**New Group Member View
+**New Group Member View --> 10
 ****************************************************************************************
 
 This is the page where new users are added to existing groups.  (there is no functionality to make groups and users at the same time)
