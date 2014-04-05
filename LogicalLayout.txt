@@ -101,6 +101,56 @@ The settings, view requests, create group, and remove group buttons stay in plac
 
 Buttons as described in visual section should be correctly programmed to take user to appropriate pages..
 
+********************************************************************************************
+**Group View
+*********************************************************************************************
+This is the page where the user views his or her groups.  This page is accessed from the Main Page.  In this page is a list of which contacts are in the group, the name of the group, a little box for sending messages, and a 
+a send button.
+
+###Visuals:
+
+On the top of the window is a button in the corner labeled "+ Members".  On the opposite corner there is a button labeled "- Members" that does the reverse function.
+
+In the middle of the application is the group name.
+
+Under the group name is a scrollable portion that lists all of the contacts included in the group.
+	The contact names are clickable and will open a new page with information about the contact.
+
+There is a short message field at the bottom of the page - the user can enter a short message.
+
+Under short message is a big send button that sends the message/request to the entire group.
+
+- + Members button will take user to + Members Page
+
+- - Members button will take user to - Members Page
+
+- Clicking any group contact will open up a contact specific page containing his/her information.
+
+- Send will send message, and question marks, check marks, or X marks will appear next to each contacts name to indicate response.
+
+###Data:
+
+The name of the group will be pulled from whereever "Groups" are stored, be it locally or serverside.
+
+The group member list will be populated from the Group data.
+
+Click on a member should open a new window, and their information should be populated in that new window.
+
+Send message will pass the short message text field to the server.  The server will then forward 
+the request and message to all contacts listed in the Group.  Those receiving the message will be given an option to respond.
+
+After send message has been pressed, icons will appear next to Group contact names.
+	Icons:
+		Check - request was approved, proceed to contact
+		X - request was denied, contact is not available
+		Question Mark - contact has not responded to request.
+
+After send message is pressed, it should either "gray out" to prevent another message being sent, or rename itself to "Send new message".
+Clicking the button will send a new message, and the icons next to group contacts will change according to the newest request.
+
+
+
+
 *****************************************************************************************
 **Create New Group View
 ****************************************************************************************
@@ -126,7 +176,28 @@ The submit button is like an "okay send" sort of thing.
 
 
 *****************************************************************************************
-**Create New Group View
+**Group Member View
+****************************************************************************************
+Group view is a page that shows up when a user clicks on a group members name from the 
+
+FINISH ME
+
+
+*****************************************************************************************
+**New Group Member View
 ****************************************************************************************
 
+This is the page where new users are added to existing groups.  (there is no functionality to make groups and users at the same time)
 
+Visual:
+
+Contains three text fields:
+	username - ONly field that works right now
+	email
+	phonenumber
+
+Data:
+
+Application will query server with username.  If username exists, nothing crazy happens.  If username does not exist in database, notify user and allow them to try again
+
+When succesfull, username will be added to g
