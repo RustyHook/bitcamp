@@ -3,7 +3,7 @@ App Name: Piepser
 This is a text document that contains information on what each "screen" should look like.  Please reference included .PNG file.
 
 ******************************************************************************
-**Login Screen --> 1
+**Login Screen --> 1 (xml name is: login.xml)
 ************************************************************************
 This is the screen the user will see upon first opening the application.
 
@@ -30,7 +30,7 @@ The login screen will need to read and interpret username and password data from
 The bottom buttons will need to be programmed to open the correct windows.
 
 *****************************************************************************
-**Register Page  --> 2
+**Register Page  --> 2 (new_account.xml)
 ****************************************************************************
 The register page is screen the user will see when creating a new account.  They are coming from the Login Screen.
 
@@ -58,7 +58,7 @@ Everytime submit is pressed, the user is assigned the next available User ID
 	(e.g. database already contains user 001 and user 002.  New user will be assigned user 003.  Next new user will be assigned user 004... etc)
 
 ***********************************************************************************
-**Main Page  --> 3
+**Main Page  --> 3 (xml name is: main_page.xml)
 *********************************************************************************
 
 This is the page that the user will spend most of his or her time in.  Hence "main page".  Inside this screen, the user will be able
@@ -103,14 +103,45 @@ Buttons as described in visual section should be correctly programmed to take us
 
 
 ********************************************************************************************
-**View Requests  --> 4
+**View Requests  --> 4 (xml name is: 
 *********************************************************************************************
+
+View Requests Page is where the user can view requests sent from other users.  They click on a request, are redirected to a new screen and then they make their yes or no selection.
+
+###Visuals: 
+
+All the requests are in a scrollable window in the middle of the window.  If there are more requests than the window can fit, the scroll part becomes active.
+
+Selecting a request will bring up the option to respond in a different screen.
+
+If there are no requests available to the user, no requests will be shown on the screen.
+
+There is a back button at the bottom right corner of the screen - this will revert the user to the Main Page
+
+###Data:
+
+Requests from other users will be pushed from the database server to the client's device.
+
+Requests will read "Request from Joe Shmo" --> Request from *Contact Name*
+
+Requests will appear in chronological order.  If there are more requests than the window can fit, it will become scrollable.
+
+When a request has been responded to, it will disappear from the View Requests page.
+
+
+********************************************************************************************
+**Settings  --> 5
+*********************************************************************************************
+
+To annoying to make right now
 
 ********************************************************************************************
 **Group View  --> 6
 *********************************************************************************************
-This is the page where the user views his or her groups.  This page is accessed from the Main Page.  In this page is a list of which contacts are in the group, the name of the group, a little box for sending messages, and a 
-a send button.
+This is the page where the user views his or her groups.  This page is accessed from the Main Page.  In this page is a list of which contacts are in the group, the name of the group, a little box for sending messages, and a send button. 
+
+The group view page is also the method to check on responses for active requests.
+(e.g. send request to HR group... click HR group from main page to view startus of responses)
 
 ###Visuals:
 
@@ -125,6 +156,8 @@ There is a short message field at the bottom of the page - the user can enter a 
 
 Under short message is a big send button that sends the message/request to the entire group.
 
+Adjacent to the message field, is a simple back button.
+
 - + Members button will take user to + Members Page
 
 - - Members button will take user to - Members Page
@@ -132,6 +165,8 @@ Under short message is a big send button that sends the message/request to the e
 - Clicking any group contact will open up a contact specific page containing his/her information.
 
 - Send will send message, and question marks, check marks, or X marks will appear next to each contacts name to indicate response.
+
+- Back will return the user to the Main Page
 
 ###Data:
 
@@ -155,6 +190,28 @@ Clicking the button will send a new message, and the icons next to group contact
 
 
 
+********************************************************************************************
+** Respond to Request Page --> 7
+*********************************************************************************************
+This page is where the user will respond to other users' requests.  It contains the other users' name, their message, and simple yes or no buttons. 
+
+##Visuals:
+
+In the cetner of the application is a text box that reads "Request from ____ _____" (contact's name).
+
+Under will be his or her short message.
+
+At the bottom of the screen are fairly large reply yes and no buttons to reply.
+
+### Data:
+
+Request from Contact Name  text box gets its information from the initial message forward from the database server.  The contact's first and last name will occupy this box.
+
+The short message is also acquired through the message forward from the database server.
+
+Replying yes or no will send the appropriate response to the server.  The server will then forward the response to the original sender (the requesting user).
+
+Either option will exit the current screen and revert back to the View Requests Page.  The request that was just responded has been removed and will not appear in the View Requests Page anymore.
 
 *****************************************************************************************
 **Create New Group View  --> 8
@@ -179,14 +236,24 @@ This name will be referenced again in the Main Page, and the following pages con
 
 The submit button is like an "okay send" sort of thing.
 
-
 *****************************************************************************************
-**Group Member View --> not added yet
+**Remove Member View  --> 9
 ****************************************************************************************
-Group view is a page that shows up when a user clicks on a group members name from the 
+This is the screen where the user can remove members from a group.  They check off boxes next to the contacts' names then press the remove button to remove.  Cancel will save no changes.
 
-FINISH ME
+### Visuals:
 
+The middle portion of the screen is taken up by a scrollable window of group member names.  If there are more contacts than the window can hold, it will become scrollable.  Each contact has a check box next to their name OR the contact can be highlighted [as a selection].
+
+There is a remove button on the bottom left corner.  On the opposite corner is a cancel button.
+
+Choosing either bottom button will return the user to the Group View Page.
+
+### Data:
+
+Group member names will come from wherever group data is stored (be it locally or on the server).
+
+When group members are removed, they will disappear from the group data and also will no longer show up in the previous Group View window.
 
 *****************************************************************************************
 **New Group Member View --> 10
@@ -206,3 +273,50 @@ Data:
 Application will query server with username.  If username exists, nothing crazy happens.  If username does not exist in database, notify user and allow them to try again
 
 When succesfull, username will be added to g
+
+
+*****************************************************************************************
+** Remove Groups View --> 11
+****************************************************************************************
+
+This is the page where the user can remove entire groups.
+
+### Visuals:
+
+In the center of the page exists a scrollable window that contains group names.  If there are more group names than the window can hold it will be scrollable.  Next to each group name is a check box OR the entire group name can be highlighted [as a selction].
+
+On the bottom left corner of the application rests a remove group button.  The opposite corner has a cancel button.
+
+Selecting remove group without selecting a group will yield no response.
+
+Selecting either button will return the user to the Main View Page.
+
+### Data
+
+Data about groups will be imported from wherever group data is stored (be it local or serverside).
+
+If there are no groups, the window should be empty.
+
+When a group is selected and the remove group button has been pressed, the group will be deleted from the group data file and will no longer show up in the Main View page.
+
+Pressing cancel will return the user to the Main view page without making any changes.
+
+*****************************************************************************************
+**Group Member View --> 12
+****************************************************************************************
+Group view is a page that shows up when a user clicks on a group members name from the Group View Page.
+
+### Visuals:
+
+In the middle of the app there is a Contact name, under a Phone Number, and under that an email address.
+
+In the bottom right of the window resides a cancel button.
+
+The cancel button will return the user to the Group View Page.
+
+### Data:
+
+The contact name, phone number, and email will be populated from either the local data storage or the database server.
+	(local data case: the group data file will contain entire records from database server)
+	(server case: opening this page will query the server for information)
+Cancel button will return user backwards.
