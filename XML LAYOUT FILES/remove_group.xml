@@ -3,13 +3,24 @@
     android:layout_height="fill_parent"
     android:background="@drawable/app_background2" >
 
-    <ScrollView
-        android:id="@+id/scrollView1"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" >
+        android:layout_marginTop="14dp"
+        android:text="Remove Groups"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,39 +31,37 @@
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sample Request 1"
+                android:text="Demo Group 1"
                 android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sample Request 2"
+                android:text="Demo Group 2"
                 android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sample Request 3"
+                android:text="Demo Group 3"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:text="Received Requests"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Remove Group[s]"
         android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_background2" >
 
     <TextView
         android:id="@+id/textView1"
@@ -10,7 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
         android:text="Contact Name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView2"
@@ -20,7 +22,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp"
         android:text="Contact&apos;s Email"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView3"
@@ -30,7 +33,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:text="Contact&apos;s Phone Number"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button1"
@@ -38,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

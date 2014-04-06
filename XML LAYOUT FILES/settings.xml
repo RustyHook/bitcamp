@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="Request from Contact Name"
+        android:layout_marginTop="34dp"
+        android:text="Settings go here"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
 
@@ -20,10 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:padding="30dp"
-        android:text="This is a sample of a small text message sent with a request."
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="15dp"
+        android:text="Eventually..."
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
 
     <Button
@@ -32,8 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:minHeight="60dp"
-        android:text="Reply:\nYes"
+        android:text="Save"
         android:textColor="#FFFFFF" />
 
     <Button
@@ -42,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Reply:\nNo"
+        android:text="Cancel"
         android:textColor="#FFFFFF" />
 
 </RelativeLayout>

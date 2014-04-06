@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_background2" >
 
     <EditText
         android:id="@+id/editText1"
@@ -10,7 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="74dp"
         android:ems="10"
-        android:text="Username" >
+        android:text="Username"
+        android:textColor="#FFFFFF" >
 
         <requestFocus />
     </EditText>
@@ -23,7 +25,8 @@
         android:layout_below="@+id/editText1"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password" />
+        android:text="Password"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/editText3"
@@ -32,7 +35,8 @@
         android:layout_alignLeft="@+id/editText2"
         android:layout_below="@+id/editText2"
         android:ems="10"
-        android:text="First Name" />
+        android:text="First Name"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/editText4"
@@ -42,7 +46,8 @@
         android:layout_below="@+id/editText3"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Last Name" />
+        android:text="Last Name"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/editText5"
@@ -52,7 +57,8 @@
         android:layout_below="@+id/editText4"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="email@address" />
+        android:text="email@address"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/editText6"
@@ -62,7 +68,8 @@
         android:layout_below="@+id/editText5"
         android:ems="10"
         android:inputType="phone"
-        android:text="Phone Number" />
+        android:text="Phone Number"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button1"
@@ -71,7 +78,8 @@
         android:layout_below="@+id/editText6"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Submit" />
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button2"
@@ -80,7 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView1"
@@ -90,6 +99,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:text="Create a new Piepser Account"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

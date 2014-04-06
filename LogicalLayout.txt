@@ -276,7 +276,7 @@ When succesfull, username will be added to g
 
 
 *****************************************************************************************
-** Remove Groups View --> 11
+** Remove Groups View --> 11 (xml is: group_view_removemember.xml)
 ****************************************************************************************
 
 This is the page where the user can remove entire groups.
@@ -302,7 +302,7 @@ When a group is selected and the remove group button has been pressed, the group
 Pressing cancel will return the user to the Main view page without making any changes.
 
 *****************************************************************************************
-**Group Member View --> 12
+**Group Member View --> 12 (xml is: group_view_specifc_member.xml)
 ****************************************************************************************
 Group view is a page that shows up when a user clicks on a group members name from the Group View Page.
 
