@@ -103,7 +103,7 @@ Buttons as described in visual section should be correctly programmed to take us
 
 
 ********************************************************************************************
-**View Requests  --> 4 (xml name is: 
+**View Requests  --> 4 (xml name is: view_request
 *********************************************************************************************
 
 View Requests Page is where the user can view requests sent from other users.  They click on a request, are redirected to a new screen and then they make their yes or no selection.
@@ -136,7 +136,7 @@ When a request has been responded to, it will disappear from the View Requests p
 To annoying to make right now
 
 ********************************************************************************************
-**Group View  --> 6
+**Group View  --> 6 (xml name is: group_view.xml)
 *********************************************************************************************
 This is the page where the user views his or her groups.  This page is accessed from the Main Page.  In this page is a list of which contacts are in the group, the name of the group, a little box for sending messages, and a send button. 
 
@@ -191,7 +191,7 @@ Clicking the button will send a new message, and the icons next to group contact
 
 
 ********************************************************************************************
-** Respond to Request Page --> 7
+** Respond to Request Page --> 7 (xml name is: view_request_respond.xml)
 *********************************************************************************************
 This page is where the user will respond to other users' requests.  It contains the other users' name, their message, and simple yes or no buttons. 
 
@@ -214,7 +214,7 @@ Replying yes or no will send the appropriate response to the server.  The server
 Either option will exit the current screen and revert back to the View Requests Page.  The request that was just responded has been removed and will not appear in the View Requests Page anymore.
 
 *****************************************************************************************
-**Create New Group View  --> 8
+**Create New Group View  --> 8 (xml name is: group_view_newmember.xml)
 ****************************************************************************************
 THis is the page where users create groups.  They add members to group on a different page.
 
